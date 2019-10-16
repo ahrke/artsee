@@ -49,7 +49,7 @@ export default MapScreen = ({navigation, arts, currUserLocation, updateUserLocat
         <MapView
           style={{ flex: 1 }}
           region={region}
-          onUserLocationChange={event => updateUserLocation()}
+          onUserLocationChange={event => updateUserLocation(event.nativeEvent)}
           ref={c => setMapview(c)}
         >
           {marker(arts, setRegion, region, navigation)}
@@ -60,13 +60,13 @@ export default MapScreen = ({navigation, arts, currUserLocation, updateUserLocat
         <NearestArtsButton setNearestArts={setNearestArts} userLocation={currUserLocation} arts={arts} />
         <Duration duration={duration} setDuration={setDuration} setDirectionState={setDirectionState} setRegion={setRegion} userLocation={currUserLocation} />
         <CenterOnMe
-         setRegion={setRegion}
-         coordinates={{
-           latitude:
-             (currUserLocation && currUserLocation.latitude) || 43.644913,
-           longitude:
-             (currUserLocation && currUserLocation.longitude) || -79.40252
-         }}
+          setRegion={setRegion}
+          coordinates={{
+            latitude:
+              (currUserLocation && currUserLocation.latitude) || 43.644913,
+            longitude:
+              (currUserLocation && currUserLocation.longitude) || -79.40252
+          }}
        />
       </View>
     </Container>

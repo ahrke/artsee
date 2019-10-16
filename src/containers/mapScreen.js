@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import MapScreen from '../Components/MapScreen/MapScreen';
 import {
-  findUserLocation,
+  updateUserLocation,
   setNearestArts
 } from '../actions';
 
@@ -12,7 +12,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  updateUserLocation: dispatch(findUserLocation()),
+  updateUserLocation: coords => dispatch(updateUserLocation(coords)),
   setNearestArts: arts => dispatch(setNearestArts(arts))
 })
 

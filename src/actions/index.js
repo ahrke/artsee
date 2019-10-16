@@ -18,6 +18,7 @@ const SET_FILTER_ARRAY = "SET_FILTER_ARRAY";
 const SET_COMMENTS = "SET_COMMENTS";
 const SET_NEW_COMMENT = "SET_NEW_COMMENT";
 const UPDATE_ART_COMMENTS = "UPDATE_ART_COMMENTS";
+const UPDATE_USER_LOCATION = "UPDATE_USER_LOCATION";
 const ADD_ART = "ADD_ART";
 
 const fetching = () => {
@@ -82,10 +83,20 @@ export const setFilterArray = (array) => {
     array
   }
 }
+
 const setUserLocation = (userLocation) => {
   return {
     type: SET_USER_LOCATION,
     userLocation
+  }
+}
+
+export const updateUserLocation = (userLocation) => {
+  console.log("==|==|> inside updateUserLocation, coordinates:",userLocation)
+  return {
+    type: UPDATE_USER_LOCATION,
+    latitude: userLocation.latitude,
+    longitude: userLocation.longitude
   }
 }
 
@@ -134,7 +145,6 @@ export const setNewComment = (newComment) => {
 }
 
 export const fetchToken = () => dispatch => {
-  dispatch(fetching())
   return AsyncStorage.getItem('token')
     .then(res => {
       dispatch(setToken(res))
@@ -150,6 +160,7 @@ export const fetchUser = () => dispatch => {
   return AsyncStorage.getItem('token')
     .then(res => {
       token = res
+      console.log("==|==|> token:",token)
       return AsyncStorage.getItem('userId')
         .then(userId => {
           return fetch(`https://artsee-back-end.herokuapp.com/users/${userId}`, {

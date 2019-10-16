@@ -14,6 +14,7 @@ const SET_FILTER_ARRAY = "SET_FILTER_ARRAY";
 const SET_COMMENTS = "SET_COMMENTS";
 const SET_NEW_COMMENT = "SET_NEW_COMMENT";
 const UPDATE_ART_COMMENTS = "UPDATE_ART_COMMENTS";
+const UPDATE_USER_LOCATION = "UPDATE_USER_LOCATION";
 const ADD_ART = "ADD_ART";
 
 const initialState = {
@@ -83,6 +84,11 @@ const maps = (state = {}, action) => {
   switch(action.type) {
     case SET_USER_LOCATION: {
       return Object.assign({}, state, {userLocation: action.userLocation})
+    }
+    case UPDATE_USER_LOCATION: {
+      return Object.assign({}, state, 
+        {userLocation: {...state.userLocation, latitude: action.latitude, longitude: action.longitude }}
+      )
     }
     case SET_DESTINATION: {
       return Object.assign({}, state, {destination: action.destination})

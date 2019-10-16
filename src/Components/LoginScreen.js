@@ -46,9 +46,10 @@ export default function LoginScreen({navigation}) {
     }
    
   };
-
+  
   _storeToken = async data => {
     try {
+      console.log("==|==|> data:",data)
       await AsyncStorage.setItem('userId', (data.user_id).toString());
       await AsyncStorage.setItem('token', data.token);
     } catch (err) {

@@ -14,6 +14,8 @@ import Icon from "react-native-vector-icons/Ionicons";
 import IconMat from 'react-native-vector-icons/MaterialIcons';
 import IconMatCom from "react-native-vector-icons/MaterialCommunityIcons";
 
+import { AsyncStorage } from 'react-native';
+
 import Comment from "./Comment";
 
 const screenHeight = Math.round(Dimensions.get('window').height);
@@ -28,6 +30,11 @@ const showInfographic = function(text) {
 }
 
 export default ArtCard = ({comp, postTag, user, postNewComment, ogUser, comments, users}) => {
+  if (!ogUser) {
+    AsyncStorage.clear()
+    console.log("==|==|> cleared storage")
+  }
+
   let [showComments, setShowComments] = useState(false);
   let [newComment, setNewComment] = useState('');
 
