@@ -18,6 +18,7 @@ What we have thus far is the culmination of 2 week's work, for our bootcamp's fi
 
 
 ## Screens
+<div id='screens'></div>
 <h3 align="center">MapView</h3>
 <div align="center">
   <img src="./assets/readme_assets/map.gif" />
@@ -36,6 +37,7 @@ What we have thus far is the culmination of 2 week's work, for our bootcamp's fi
 </div>
 
 ## Who
+<div id='who'></div>
 
 [Arturas Zuta](https://github.com/arturaszuta)
 - AWS Rekognition and Bucket
