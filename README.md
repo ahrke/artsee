@@ -22,11 +22,13 @@ What we have thus far is the culmination of 2 week's work, for our bootcamp's fi
 <div align="center">
   <img src="./assets/readme_assets/map.gif" />
 </div>
+<hr>
 
 <h3 align="center">FeedScreen</h3>
 <div align="center">
   <img src="./assets/readme_assets/feed.gif" />
 </div>
+<hr>
 
 <h3 align="center">ProfileScreen</h3>
 <div align="center">
