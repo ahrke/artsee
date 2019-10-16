@@ -7,7 +7,8 @@
 - [Screens](#screens)
 - [Who](#who)
 
-## About
+## About 
+<div id='about'></div>
 A Native app that helps users find graffiti and art around a city. Stack consists of React Native, Redux, Ruby on Rails, PostgreSQL, and MongoDB. 
 
 The app contains 4 sections, MapView, FeedScreen, Camera, and ProfileScreen. The map contains markers, which each represent an art piece that a user has uploaded. Upon clicking a marker, a modal view will show the user the image, as well as accompanying information (comments, liked, visited, etc). The feed section is a collection of all art pieces uploaded by users. This is presented by a scrolling list of images. Each image is accompanied by user who uploaded, icons to like, claim as visited, or want to see. Users can also comment on each image. The profile page consists of the user's avatar, background image, and the collection of art pieces they've liked, visted, or want to see. 
@@ -18,6 +19,7 @@ What we have thus far is the culmination of 2 week's work, for our bootcamp's fi
 
 
 ## Screens
+<div id='screens'></div>
 <h3 align="center">MapView</h3>
 <div align="center">
   <img src="./assets/readme_assets/map.gif" />
@@ -36,6 +38,7 @@ What we have thus far is the culmination of 2 week's work, for our bootcamp's fi
 </div>
 
 ## Who
+<div id='who'></div>
 
 [Arturas Zuta](https://github.com/arturaszuta)
 - AWS Rekognition and Bucket
