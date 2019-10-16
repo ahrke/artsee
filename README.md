@@ -44,12 +44,14 @@ What we have thus far is the culmination of 2 week's work, for our bootcamp's fi
   - Main Component
   - Filters
 - Camera Implementation
+
 [Annie Kao](https://github.com/anniekao)
 - Authentication and Login
 - Session and Security
 - App Component Navigation
 - Profile Screen
 - MongoDB (for comments)
+
 [David Nguyen](https://github.com/ahrke)
 - Rails Back-end (Routes, Models, Controllers), and API
 - PostgreSQL (schema, and generation)
