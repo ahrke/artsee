@@ -18,17 +18,17 @@ What we have thus far is the culmination of 2 week's work, for our bootcamp's fi
 
 
 ## Screens
-MapView
+<h3 align="center">MapView</h3>
 <div align="center">
   <img src="./assets/readme_assets/map.gif" />
 </div>
 
-FeedScreen
+<h3 align="center">FeedScreen</h3>
 <div align="center">
   <img src="./assets/readme_assets/feed.gif" />
 </div>
 
-ProfileScreen
+<h3 align="center">ProfileScreen</h3>
 <div align="center">
   <img src="./assets/readme_assets/profile.gif" />
 </div>
